@@ -1,4 +1,4 @@
-﻿name: Bug report
+name: Bug report
 description: Something in one of the addons is broken or behaving wrongly
 title: "[Bug] "
 labels: ["bug", "needs triage"]
@@ -8,11 +8,14 @@ body:
       value: |
         Thanks for taking the time to report this.
 
-        ðŸ”Ž Please [search existing issues](https://github.com/StellarFrog/stellys-addons-issues/issues?q=is%3Aissue) first. If it is already reported,
-        add your details to that thread instead. A second account from a different server is useful.
+        Please [search existing issues](https://github.com/StellarFrog/stellys-addons-issues/issues?q=is%3Aissue)
+        first. If it is already reported, add your details to that thread instead. A second account
+        from a different server is useful.
 
-        ðŸ”’ **Found an exploit?** Money duplication, permission bypasses, anything that lets a player
-        break a server: **close this form** and follow [SECURITY.md](https://github.com/StellarFrog/stellys-addons-issues/blob/main/SECURITY.md) instead.
+        **Found an exploit?** Money duplication, permission bypasses, or anything that lets a player
+        break a server: close this form and follow
+        [SECURITY.md](https://github.com/StellarFrog/stellys-addons-issues/blob/main/SECURITY.md)
+        instead.
 
   - type: dropdown
     id: addon
@@ -87,7 +90,7 @@ body:
     id: role
     attributes:
       label: Were you the server owner or a player
-      placeholder: Player / server owner / staff
+      placeholder: Player, server owner, or staff
     validations:
       required: false
 
@@ -117,8 +120,8 @@ body:
       label: Before you submit
       options:
         - label: >-
-            I have checked that nothing I pasted contains a server token, connection string or API key.
-            Issues here are public and permanent.
+            I have checked that nothing I pasted contains a server token, connection string or API
+            key. Issues here are public and permanent.
           required: true
         - label: >-
             This is not an exploit. Exploits are reported privately, see SECURITY.md.

@@ -14,7 +14,8 @@ The addons themselves are developed in a private repository. This one exists so 
 playing on a server with these addons has a single clear place to report something broken or ask for
 something better, without needing access to the source.
 
-### [Report a bug](../../issues/new?template=bug_report.yml) · [Send feedback or request a feature](../../issues/new?template=feedback.yml)
+**[Report a bug](../../issues/new?template=bug_report.yml)** or
+**[send feedback](../../issues/new?template=feedback.yml)**
 
 Before you open one, a quick search of [existing issues](../../issues?q=is%3Aissue) saves everyone a
 round trip. If someone already reported it, add what you know to that thread instead. A second account
@@ -28,13 +29,13 @@ have console output, paste it.
 
 You do not need to diagnose anything. "The vending machine ate my money" is a perfectly good report.
 
-> ⚠️ **Do not paste server tokens, connection strings or API keys into an issue.** Server logs
-> sometimes contain them. Issues here are public and permanent, and anyone can read them. Check before
-> you paste, and if something slips through, say so and it will be removed.
+**Do not paste server tokens, connection strings or API keys into an issue.** Server logs sometimes
+contain them. Issues here are public and permanent, and anyone can read them. Check before you paste,
+and if something slips through, say so and it will be removed.
 
-> 🔒 **Found an exploit?** Money duplication, permission bypasses, anything that breaks a server rather
-> than annoys a player: **do not open a public issue.** See [SECURITY.md](SECURITY.md) and report it
-> privately.
+**Found an exploit?** Money duplication, permission bypasses, anything that breaks a server rather
+than annoys a player: do not open a public issue. See [SECURITY.md](SECURITY.md) and report it
+privately.
 
 ## The addons
 
@@ -60,7 +61,8 @@ You do not need to diagnose anything. "The vending machine ate my money" is a pe
 
 ## Elsewhere
 
-- **Discord:** the fastest way to ask a question or talk to other server owners
+- **Discord:** https://discord.gg/cosmic-networks, the fastest way to ask a question or talk to other
+  server owners
 - **s&box:** the addons are published under the `stellysaddons` organisation
 
 Issues here are read. Not every request gets built, but every report gets looked at.

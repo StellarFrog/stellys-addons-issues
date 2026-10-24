@@ -1,4 +1,4 @@
-﻿# setup-labels.ps1 - create the triage labels on the public issues repo.
+# setup-labels.ps1 - create the triage labels on this issues repo.
 #
 # Run once after the repo exists:   .\setup-labels.ps1
 # Safe to re-run: existing labels are updated rather than duplicated.
@@ -6,6 +6,11 @@
 # Why per-addon labels: the fleet is 17 addons sharing one tracker, so "which addon" is the first
 # question on every issue. The dropdown in the bug form records it in the body, but only a LABEL
 # makes it filterable, which is what you actually want three months in.
+#
+# Every file in this repo is deliberately ASCII only, with no byte order mark. Editing these files
+# with PowerShell's Get-Content/Set-Content silently re-encodes them through the ANSI codepage and
+# corrupts any non-ASCII character, which is how the first version of this repo ended up rendering
+# emoji as mojibake on GitHub.
 
 param(
     [string]$Repo = "StellarFrog/stellys-addons-issues"
@@ -50,12 +55,12 @@ $labels = @(
     @('addon: smokes',          '1f6feb', "Stelly's Smokes")
 )
 
-$made = 0; $updated = 0; $failed = 0
+$made = 0; $failed = 0
 foreach ($l in $labels) {
     $name = $l[0]; $colour = $l[1]; $desc = $l[2]
     $out = & gh label create $name --repo $Repo --color $colour --description $desc --force 2>&1
     if ($LASTEXITCODE -eq 0) {
-        if ($out -match 'already exists') { $updated++ } else { $made++ }
+        $made++
         Write-Host ("  {0}" -f $name) -ForegroundColor Green
     }
     else {
@@ -65,5 +70,5 @@ foreach ($l in $labels) {
 }
 
 Write-Host ""
-Write-Host "$made created, $updated updated, $failed failed" -ForegroundColor Cyan
-Write-Host "GitHub's own defaults (enhancement, question, good first issue...) are left alone; delete them in the UI if you do not want them."
+Write-Host "$made applied, $failed failed" -ForegroundColor Cyan
+Write-Host "GitHub's own defaults (enhancement, question, good first issue) are left alone; delete them in the UI if you do not want them."

@@ -1,19 +1,19 @@
-﻿# Blank issues are turned off so that every report arrives with the fields needed to act on it.
+# Blank issues are turned off so that every report arrives with the fields needed to act on it.
 blank_issues_enabled: false
 
 contact_links:
-  - name: ðŸ”’ Report an exploit privately
+  - name: Report an exploit privately
     url: https://github.com/StellarFrog/stellys-addons-issues/security/advisories/new
     about: >-
       Money duplication, permission bypasses, or anything that lets a player break a server.
       Never post these publicly. This opens a private report only the maintainer can read.
 
-  - name: ðŸ’¬ Ask a question on Discord
+  - name: Ask a question on Discord
     url: https://discord.gg/cosmic-networks
     about: >-
       Questions, setup help, and talking to other server owners. Faster than an issue for anything
       that is not a bug report.
 
-  - name: ðŸ“¦ The addons on s&box
+  - name: The addons on s&box
     url: https://sbox.game/stellysaddons
     about: Browse and install the published addons.
