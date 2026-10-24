@@ -1,0 +1,91 @@
+name: Feedback or feature request
+description: Suggest something new, or tell us how an addon feels to play
+title: "[Feedback] "
+labels: ["feedback", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas and criticism are both welcome. Telling us something feels bad to use is useful even if
+        you have no suggestion attached to it.
+
+        🔎 Please [search existing issues](../../issues?q=is%3Aissue) first and add to an existing
+        thread where one fits.
+
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Which addon
+      options:
+        - Living Skies (weather and sky)
+        - Classic Events Pack
+        - Classic Lottery
+        - Classic Movement
+        - Classic Kidnapping
+        - Classic Thief
+        - Stelly's Command Center (staff tools)
+        - Stelly's Black Market
+        - Stelly's DJ Kit
+        - Stelly's Fit Kit
+        - Stelly's Mining Co.
+        - Stelly's Narcotics
+        - Stelly's Precinct
+        - Stelly's Press
+        - Stelly's Rewards System
+        - Stelly's Skate
+        - Stelly's Smokes
+        - A new addon that does not exist yet
+        - General, across several of them
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of feedback is this
+      options:
+        - A new feature or addition
+        - A change to something that already exists
+        - Balance, pricing or progression
+        - How it looks or sounds
+        - How it feels to use
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like
+      description: Describe the idea, or the thing that bothers you.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter
+      description: >-
+        What does it improve, and for whom? Players, server owners, staff? This is the part that
+        decides what gets built, so it is worth a sentence or two.
+      placeholder: >-
+        Right now the only way to do this is X, which takes four clicks every time and most players
+        never find it.
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Are you a server owner or a player
+      placeholder: Player / server owner / staff
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: References, screenshots, sketches, examples from other servers or games.
+    validations:
+      required: false

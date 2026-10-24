@@ -1,0 +1,125 @@
+name: Bug report
+description: Something in one of the addons is broken or behaving wrongly
+title: "[Bug] "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        🔎 Please [search existing issues](../../issues?q=is%3Aissue) first. If it is already reported,
+        add your details to that thread instead. A second account from a different server is useful.
+
+        🔒 **Found an exploit?** Money duplication, permission bypasses, anything that lets a player
+        break a server: **close this form** and follow [SECURITY.md](../blob/main/SECURITY.md) instead.
+
+  - type: dropdown
+    id: addon
+    attributes:
+      label: Which addon
+      description: Pick the closest one. If you are not sure, say so and describe what you saw.
+      options:
+        - Living Skies (weather and sky)
+        - Classic Events Pack
+        - Classic Lottery
+        - Classic Movement
+        - Classic Kidnapping
+        - Classic Thief
+        - Stelly's Command Center (staff tools)
+        - Stelly's Black Market
+        - Stelly's DJ Kit
+        - Stelly's Fit Kit
+        - Stelly's Mining Co.
+        - Stelly's Narcotics
+        - Stelly's Precinct
+        - Stelly's Press
+        - Stelly's Rewards System
+        - Stelly's Skate
+        - Stelly's Smokes
+        - Not sure which one
+        - More than one of them
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe what went wrong in your own words. No diagnosis needed.
+      placeholder: The vending machine took my money and gave me nothing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: Step by step, as far as you can tell. If it happened once at random, say that.
+      placeholder: |
+        1. Buy a pack from the SMOKES machine
+        2. Open the equipment wheel
+        3. The pack is not there, and the money is gone
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+      placeholder: The pack should appear in my equipment.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen
+      options:
+        - Every time
+        - Most of the time
+        - Now and then
+        - It happened once
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Were you the server owner or a player
+      placeholder: Player / server owner / staff
+    validations:
+      required: false
+
+  - type: input
+    id: when
+    attributes:
+      label: Roughly when did this happen
+      description: A date and rough time helps match it against server logs.
+      placeholder: 24 October, around 9pm UK time
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output, screenshots or a clip
+      description: >-
+        Paste anything relevant. A screenshot or short clip is often worth more than a description.
+        Text pasted here is rendered as code, so formatting is preserved.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Before you submit
+      options:
+        - label: >-
+            I have checked that nothing I pasted contains a server token, connection string or API key.
+            Issues here are public and permanent.
+          required: true
+        - label: >-
+            This is not an exploit. Exploits are reported privately, see SECURITY.md.
+          required: true
