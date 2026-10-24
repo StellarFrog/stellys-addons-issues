@@ -1,4 +1,4 @@
-name: Bug report
+﻿name: Bug report
 description: Something in one of the addons is broken or behaving wrongly
 title: "[Bug] "
 labels: ["bug", "needs triage"]
@@ -8,11 +8,11 @@ body:
       value: |
         Thanks for taking the time to report this.
 
-        🔎 Please [search existing issues](../../issues?q=is%3Aissue) first. If it is already reported,
+        ðŸ”Ž Please [search existing issues](https://github.com/StellarFrog/stellys-addons-issues/issues?q=is%3Aissue) first. If it is already reported,
         add your details to that thread instead. A second account from a different server is useful.
 
-        🔒 **Found an exploit?** Money duplication, permission bypasses, anything that lets a player
-        break a server: **close this form** and follow [SECURITY.md](../blob/main/SECURITY.md) instead.
+        ðŸ”’ **Found an exploit?** Money duplication, permission bypasses, anything that lets a player
+        break a server: **close this form** and follow [SECURITY.md](https://github.com/StellarFrog/stellys-addons-issues/blob/main/SECURITY.md) instead.
 
   - type: dropdown
     id: addon

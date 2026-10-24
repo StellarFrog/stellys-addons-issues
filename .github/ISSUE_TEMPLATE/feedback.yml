@@ -1,4 +1,4 @@
-name: Feedback or feature request
+﻿name: Feedback or feature request
 description: Suggest something new, or tell us how an addon feels to play
 title: "[Feedback] "
 labels: ["feedback", "needs triage"]
@@ -9,7 +9,7 @@ body:
         Ideas and criticism are both welcome. Telling us something feels bad to use is useful even if
         you have no suggestion attached to it.
 
-        🔎 Please [search existing issues](../../issues?q=is%3Aissue) first and add to an existing
+        ðŸ”Ž Please [search existing issues](https://github.com/StellarFrog/stellys-addons-issues/issues?q=is%3Aissue) first and add to an existing
         thread where one fits.
 
   - type: dropdown
