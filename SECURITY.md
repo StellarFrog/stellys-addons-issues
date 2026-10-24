@@ -25,9 +25,11 @@ nothing, and a false alarm is far cheaper than a public disclosure.
 **[Open a private security advisory](https://github.com/StellarFrog/stellys-addons-issues/security/advisories/new).**
 Only the maintainer can read it, and you can keep talking in that thread until it is resolved.
 
-If you would rather not use GitHub, send it as a direct message on
-[Discord](https://discord.gg/cosmic-networks) instead. Say that it is a security report and nothing
+If that link does not open a form, or you would rather not use GitHub, send it as a direct message on
+[Discord](https://discord.gg/cosmic-networks) instead. Say that it is a security report, and nothing
 else about it in public channels.
+
+Either route is fine. Reporting it somewhere private matters far more than which one you pick.
 
 ## What helps
 

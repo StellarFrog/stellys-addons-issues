@@ -2,11 +2,14 @@
 blank_issues_enabled: false
 
 contact_links:
+  # Points at the policy rather than straight at /security/advisories/new, because that URL 404s
+  # until private vulnerability reporting is switched on. SECURITY.md always resolves and carries
+  # both the advisory link and the Discord fallback.
   - name: Report an exploit privately
-    url: https://github.com/StellarFrog/stellys-addons-issues/security/advisories/new
+    url: https://github.com/StellarFrog/stellys-addons-issues/blob/main/SECURITY.md
     about: >-
       Money duplication, permission bypasses, or anything that lets a player break a server.
-      Never post these publicly. This opens a private report only the maintainer can read.
+      Never post these publicly. Read this for how to report it privately.
 
   - name: Ask a question on Discord
     url: https://discord.gg/cosmic-networks
