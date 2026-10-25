@@ -4,7 +4,8 @@
 addons are developed privately and only bug reports and feedback are collected here.
 
 If you meant to report something broken or suggest a change to an addon, close this and open an
-[issue](../../issues/new/choose) instead. That is the right place and it will get read.
+[issue](https://github.com/StellarFrog/stellys-addons-issues/issues/new/choose) instead. That is the
+right place and it will get read.
 
 Pull requests are welcome for one thing only: a correction to the text in this repository, such as a
 typo, a dead link, or a wrong addon description in the README.
